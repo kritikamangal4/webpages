@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Freak Attack</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("https://thumbs.dreamstime.com/b/show-dance-floor-vector-background-spotlights-party-concert-stage-illustration-61442187.jpg") no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      max-width: 90%;
+    }
+
+    .left, .right {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #ffcc00;
+      text-shadow: 2px 2px 8px black;
+      margin-bottom: 5px;
+    }
+
+    /* Stylish Sub-heading */
+    .tagline {
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff, 0 0 20px #ff004c;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 15px;
+      color: #00eaff;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    /* Highlights under About Us */
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .point {
+      background: rgba(255,255,255,0.1);
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      color: #ffcc00;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+
+    .point:hover {
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.2);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #ff004c, #ff8c00);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .gallery-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+
+    .gallery p {
+      margin: 0;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8em;
+      text-align: center;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left">
+      <h1>Dance Freak Attack</h1>
+      <div class="tagline">ENERGY • AGRESSION • EXPRESSION</div>
+
+      <h2>About Us</h2>
+      <p>"Dance Freak Attack (DFA) is more than just a dance club – it’s a movement where raw Energy, fierce Aggression, and powerful Expression come together. We believe dance is not just steps, but a voice, a passion, and an identity that speaks louder than words."</p>
+      
+      <!-- New Highlights -->
+      <div class="highlights">
+        <div class="point">⚡ High Energy Performances</div>
+        <div class="point">💥 Aggression with Style</div>
+        <div class="point">🎭 Powerful Expressions</div>
+        <div class="point">🤝 A Supportive Dance Family</div>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+      <h2>Our Moments</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="C:\Users\smile\OneDrive\Desktop\mayukh.jpg" alt="Dance 1">
+          <p>Mayukh2.0</p>
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\smile\OneDrive\Desktop\feel the rythm.jpg" alt="Dance 2">
+          <p>Feel The Rhythm</p>
+        </div>
+        <div class="gallery-item">
+          <img src="C:\Users\smile\OneDrive\Desktop\thirak.jpg" alt="Dance 3">
+          <p>Thirak</p>
+        </div>
+      </div>
+
+      <!-- Join Us Section shifted under photos -->
+      <h2>Join Us</h2>
+      <p>Welcome to DFA 🎶 The ultimate dance club where passion meets performance. Join us and feel the rhythm of life.</p>
+      <button onclick="alert('Thanks for joining Dance Freak Attack! 🎉')">Join Now</button>
+
+      <footer>
+        © 2025 Dance Freak Attack | Designed with ❤️ for Dance Lovers
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
